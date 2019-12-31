@@ -16,7 +16,7 @@ Example: Numbers from 1 to 20 will return:
 Install [Node.js](https://nodejs.org/)
 
 Make sure you have npm globally accessible and from a console/terminal, in the project folder run the following command:
-```shell
+```console
 npm install
 ```
 
