@@ -12,14 +12,26 @@ Example: Numbers from 1 to 20 will return:
 
 1, 2, “fizz fizz”, 4, “buzz buzz”, “fizz”, 7,8, “fizz”, “buzz”, 11, “fizz”, “fizz”, 14, “lucky”, 16, 17,” fizz “, 19,” buzz ”
 
-## Run application
-From a console/terminal, in the project folder, run the following command:
+## Prerequisite
+Install [Node.js](https://nodejs.org/)
+
+Make sure you have npm globally accessible and from a console/terminal, in the project folder run the following command:
 ```shell
+npm install
+```
+
+## Run application
+From a console/terminal, in the project folder, run the following command (where 'number' should be replaced by the number you want to pass):
+```console
 npm start <number>
+```
+Example, for number 9:
+```console
+npm start 9
 ```
 
 ## Run tests
 From a console/terminal, in the project folder, run the following command:
-```shell
+```console
 npm test
 ```
