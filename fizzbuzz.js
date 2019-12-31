@@ -1,12 +1,15 @@
+const containsTheNumber = number => input => input.toString().indexOf(number) > -1
+const isMultipleOf = number => input => input % number === 0
+
 const fizzbuzz = number => {
   const FIZZ = 'fizz'
   const BUZZ = 'buzz'
   const LUCKY = 'lucky'
 
-  const containsTheNumber3 = number.toString().indexOf(3) > -1
-  const isMultipleOf3 = number % 3 === 0
-  const containsTheNumber5 = number.toString().indexOf(5) > -1
-  const isMultipleOf5 = number % 5 === 0
+  const containsTheNumber3 = containsTheNumber(3)(number)
+  const isMultipleOf3 = isMultipleOf(3)(number)
+  const containsTheNumber5 = containsTheNumber(5)(number)
+  const isMultipleOf5 = isMultipleOf(5)(number)
 
   if(isMultipleOf3 && isMultipleOf5 && (containsTheNumber3 || containsTheNumber5))
     return LUCKY
