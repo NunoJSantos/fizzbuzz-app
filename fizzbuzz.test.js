@@ -29,3 +29,8 @@ test("returns 'buzz' if it's a multiple of 5 or contains 5 in its representation
   const result = fizzbuzz(10)
   expect(result).toBe('buzz')
 })
+
+test("returns 'fizzbuzz' if it's a multiple of 3 and 5", () => {
+  const result = fizzbuzz(60)
+  expect(result).toBe('fizzbuzz')
+})
